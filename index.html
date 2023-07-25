@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B8A3 Fruit Brust Landing Page</title>
+    <!--Tailwind & Daisy UI cdn link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Tailwind Customized setup-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+    <!--Google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Customized css-->
+    <style>
+        .lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="text-lato">
+    <header class="lg:container lg:mx-auto py-0 lg:py-[25px]">
+        <nav class="bg-white md:bg-primary-color lg:bg-primary-color flex justify-between items-center px-[10px] lg:px-[15px] py-[15px] lg:py-[15px] rounded-none lg:rounded-full">
+            <!--Nav links-->
+            <ul class="hidden md:flex lg:flex">
+                <li class="mx-4"><a class="text-white text-[18px] font-normal">Home</a></li>
+                <li class="mx-4"><a class="text-white text-[18px] font-normal">About Us</a></li>
+                <li class="mx-4"><a class="text-white text-[18px] font-normal">Shop</a></li>
+                <li class="mx-4"><a class="text-white text-[18px] font-normal">All Fruits</a></li>
+            </ul>
+            <!--logo-->
+            <div class="flex items-center gap-2">
+                <img src="./images/logo.png" alt="logo">
+                <p class="text-[##121212] md:text-white lg:text-white text-[20px] md:text-[40px] lg:text-[40px] font-[700]">Fruit Brust</p>
+            </div>
+
+            <!--Searchbar-->
+            <div class="relative hidden lg:flex">
+                <input type="search" placeholder="Search here" class="mx-4 w-80 rounded-full py-2 px-4">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute top-[10px] left-[300px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                  </svg>                  
+            </div>
+
+            <!--Dropdown icon-->
+            <div class="flex items-center md:hidden lg:hidden">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[24px] h-[24px] text-[#121212]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                      
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto"></main>
+    <footer></footer>
+</body>
+
+</html>
