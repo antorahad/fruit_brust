@@ -35,9 +35,9 @@
 
 <body class="text-lato">
     <header class="lg:container lg:mx-auto py-0 lg:py-[25px]">
-        <nav class="bg-white md:bg-primary-color lg:bg-primary-color flex justify-between items-center px-[10px] lg:px-[25px] py-[15px] lg:py-[20px] rounded-none lg:rounded-full">
+        <nav class="bg-white lg:bg-primary-color flex justify-between items-center px-[10px] lg:px-[25px] py-[15px] lg:py-[20px] rounded-none lg:rounded-full">
             <!--Nav links-->
-            <ul class="hidden md:flex lg:flex">
+            <ul class="hidden lg:flex">
                 <li class="mx-4"><a class="text-white text-[18px] font-[400]">Home</a></li>
                 <li class="mx-4"><a class="text-white text-[18px] font-[400]">About Us</a></li>
                 <li class="mx-4"><a class="text-white text-[18px] font-[400]">Shop</a></li>
@@ -46,7 +46,7 @@
             <!--logo-->
             <div class="flex items-center gap-2">
                 <img src="./images/logo.png" alt="logo">
-                <p class="text-[##121212] md:text-white lg:text-white text-[20px] md:text-[40px] lg:text-[40px] font-[700]">Fruit Brust</p>
+                <p class="text-[##121212] lg:text-white text-[20px] md:text-[40px] lg:text-[40px] font-[700]">Fruit Brust</p>
             </div>
 
             <!--Searchbar-->
@@ -58,18 +58,26 @@
                   </svg>                  
             </div>
 
-            <!--Dropdown icon-->
-            <div class="flex items-center md:hidden lg:hidden">
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[24px] h-[24px] text-[#121212]">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>                      
-                </button>
+            <!--Hamburger menu-->
+            <div class="flex items-center lg:hidden">
+                <div class="dropdown dropdown-bottom dropdown-end">
+                    <label tabindex="0" class="btn bg-transparent border-transparent m-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[24px] h-[24px]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>                           
+                    </label>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-4 shadow-md bg-base-100 rounded-box w-96 mt-6">
+                      <li class="my-2"><a>Home</a></li>
+                      <li class="my-2"><a>About Us</a></li>
+                      <li class="my-2"><a>Shop</a></li>
+                      <li class="my-2"><a>All Fruits</a></li>
+                      <li class="my-2"><input type="search" placeholder="Search here" class="rounded-full bg-slate-200 px-[20px] py-[10px]"></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main class="container mx-auto"></main>
     <footer></footer>
 </body>
-
 </html>
